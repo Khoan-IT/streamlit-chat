@@ -12,7 +12,7 @@ from streamlit_extras.stylable_container import stylable_container
 st.set_page_config(page_title="Chat + Firebase", page_icon="💬")
 MODEL = "llama3.2:1b"
 client = Client(
-    host='http://syxxi-35-229-50-50.a.free.pinggy.link'
+    host='http://mhast-34-12-24-245.a.free.pinggy.link'
 )
 
 def ollama_stream(history_messages: list[dict]):
