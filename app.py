@@ -1,3 +1,4 @@
+import time
 import streamlit as st
 import pyrebase
 import firebase_admin
@@ -185,6 +186,7 @@ def signup_form():
         try:
             user = auth.create_user_with_email_and_password(email, password)
             st.success("Tạo tài khoản thành công! Vui lòng đăng nhập.")
+            time.sleep(3)
             st.session_state["show_signup"] = False
             st.session_state["show_login"] = True
             st.rerun()
